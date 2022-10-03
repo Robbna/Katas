@@ -20,21 +20,15 @@ public class DropCapKata {
      */
 
     public static String dropCap(String text) {
-
         return Arrays.stream(text.split(" ", -1)).map(word -> {
             if (!word.equals("")) {
                 if (word.length() > 2) {
-                    return capitalize(word);
+                    return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
                 } else {
                     return word;
                 }
             }
             return "";
         }).collect(Collectors.joining(" "));
-
-    }
-
-    private static String capitalize(String word) {
-        return word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
     }
 }
