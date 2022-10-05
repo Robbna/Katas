@@ -1,12 +1,8 @@
 package kyu_7;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
-
 public class ExecuteTests {
-
     @Test
     public void testDropCap() {
         assertEquals("  Leading Spaces", DropCapKata.dropCap("  leading spaces"));
@@ -20,5 +16,4 @@ public class ExecuteTests {
         assertEquals("All Caps Craziness", DropCapKata.dropCap("ALL CAPS CRAZINESS"));
         assertEquals("Random Caps Craziness", DropCapKata.dropCap("rAnDoM CaPs CrAzInEsS"));
     }
-
 }

@@ -1,12 +1,8 @@
 package kyu_8;
-
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-
 public class ExecuteTests {
-
-
     @Test
     public void testDigitize() {
         assertArrayEquals(new int[]{1, 3, 2, 5, 3}, DigitizeKata.digitize(35231));
@@ -15,7 +11,6 @@ public class ExecuteTests {
         assertArrayEquals(new int[]{7, 1, 3}, DigitizeKata.digitize(317));
         assertArrayEquals(new int[]{2, 9, 7, 5, 8}, DigitizeKata.digitize(85792));
     }
-
     @Test
     public void testNoSpace() {
         assertEquals("8j8mBliB8gimjB8B8jlB", NoSpaceKata.noSpace("8 j 8   mBliB8g  imjB8B8  jl  B"));
