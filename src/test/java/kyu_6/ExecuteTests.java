@@ -20,8 +20,8 @@ public class ExecuteTests {
     }
     @Test
     public void testBreakCamelCase() {
-        assertEquals("camel Casing", BreakCamelCase.camelCase("camelCasing"));
-        assertEquals("camel Casing Test", BreakCamelCase.camelCase("camelCasingTest"));
-        assertEquals("camelcasingtest", BreakCamelCase.camelCase("camelcasingtest"));
+        assertEquals("camel Casing", BreakCamelCaseKata.camelCase("camelCasing"));
+        assertEquals("camel Casing Test", BreakCamelCaseKata.camelCase("camelCasingTest"));
+        assertEquals("camelcasingtest", BreakCamelCaseKata.camelCase("camelcasingtest"));
     }
 }

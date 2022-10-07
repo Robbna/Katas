@@ -1,8 +1,5 @@
 package kyu_6;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.stream.Collectors;
-public class BreakCamelCase {
+public class BreakCamelCaseKata {
     /**
      * <p>💡 <b>Kata: </b><a href="https://www.codewars.com/kata/5208f99aee097e6552000148">Break camelCase</p>
      * <p>🧠 <b>Difficulty: </b>6 kyu</p>
