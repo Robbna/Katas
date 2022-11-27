@@ -24,4 +24,11 @@ public class ExecuteTests {
         assertEquals("camel Casing Test", BreakCamelCaseKata.camelCase("camelCasingTest"));
         assertEquals("camelcasingtest", BreakCamelCaseKata.camelCase("camelcasingtest"));
     }
+    @Test
+    public void testRemoveParentheses() {
+        assertEquals("exampleexample", RemoveParenthesesKata.removeParentheses("example(unwanted thing)example"));
+        assertEquals("a", RemoveParenthesesKata.removeParentheses("a(b(c))"));
+        assertEquals("example  example", RemoveParenthesesKata.removeParentheses("example (unwanted thing) example"));
+        assertEquals("  ", RemoveParenthesesKata.removeParentheses("(first group) (second group) (third group)"));
+    }
 }
