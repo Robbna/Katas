@@ -14,10 +14,6 @@ public class RemoveParenthesesKata {
         StringBuilder text = new StringBuilder(input);
         int pos1 = input.indexOf('(');
         int pos2 = input.lastIndexOf(')');
-        System.out.println(pos1);
-        System.out.println(pos2);
-        String output = text.replace(pos1, pos2 + 1, "").toString();
-        System.out.println(output);
-        return output;
+        return text.replace(pos1, pos2 + 1, "").toString();
     }
 }
